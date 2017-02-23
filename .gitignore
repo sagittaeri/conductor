@@ -37,6 +37,7 @@ Builds.meta
 
 Library
 !/Assets/Library
+Libraries
 
 *.sublime-project
 *.sublime-workspace
