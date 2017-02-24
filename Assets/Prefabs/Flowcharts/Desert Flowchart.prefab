@@ -88,6 +88,31 @@ GameObject:
   - component: {fileID: 114856917363133992}
   - component: {fileID: 114682358747436792}
   - component: {fileID: 114100376811055876}
+  - component: {fileID: 114576349846946510}
+  - component: {fileID: 114975076307953954}
+  - component: {fileID: 114393268617713436}
+  - component: {fileID: 114060977726049950}
+  - component: {fileID: 114058956238022168}
+  - component: {fileID: 114985003097884958}
+  - component: {fileID: 114301485308888336}
+  - component: {fileID: 114201519413956488}
+  - component: {fileID: 114104906581273024}
+  - component: {fileID: 114489904183252356}
+  - component: {fileID: 114723032388852668}
+  - component: {fileID: 114980559721635360}
+  - component: {fileID: 114433088439321732}
+  - component: {fileID: 114930186812845168}
+  - component: {fileID: 114018100103976240}
+  - component: {fileID: 114965908320491898}
+  - component: {fileID: 114016984507867338}
+  - component: {fileID: 114300117253516464}
+  - component: {fileID: 114750937195473172}
+  - component: {fileID: 114404155282394424}
+  - component: {fileID: 114271505983603624}
+  - component: {fileID: 114354774052833562}
+  - component: {fileID: 114179709661908050}
+  - component: {fileID: 114435376626341922}
+  - component: {fileID: 114367544615735406}
   m_Layer: 0
   m_Name: Desert Flowchart
   m_TagString: Untagged
@@ -126,6 +151,47 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: fruit cactus default behavior
   messageOLD: 
+--- !u!114 &114016984507867338
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 1
+  storyText: "Fill cup with cactus water. \nplayer: ...\nplayer: It\u2019s filling
+    up pretty slowly.\nplayer: Might take a few minu\u2014oh, it\u2019s done. \n(Obtained
+    a Cup of Cactus Juice)"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &114018100103976240
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: HasCactusJuice
+  value: 0
 --- !u!114 &114029040477068324
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -178,6 +244,24 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114774262279883538}
+--- !u!114 &114058956238022168
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43743931d28f43f89eced820d907351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 97
+  indentLevel: 1
+  messageTarget: 0
+  _message:
+    stringRef: {fileID: 0}
+    stringVal: large cactus default behavior
+  messageOLD: 
 --- !u!114 &114059083311787344
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -195,9 +279,22 @@ MonoBehaviour:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 0}
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &114060977726049950
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 96
+  indentLevel: 0
 --- !u!114 &114100376811055876
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -208,6 +305,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 114856917363133992}
   message: fox fruit behavior
+--- !u!114 &114104906581273024
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 100
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114157752794903148}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114157752794903148
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -247,6 +371,19 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114179709661908050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114404155282394424}
+  message: fox cactus juice behavior
 --- !u!114 &114189030654949662
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -274,6 +411,19 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &114201519413956488
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114985003097884958}
+  message: large cactus default
 --- !u!114 &114224024945497116
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -352,11 +502,29 @@ MonoBehaviour:
   - {fileID: 114353629284037740}
   - {fileID: 114922525138452096}
   - {fileID: 114460996711176858}
+  - {fileID: 114300117253516464}
+  - {fileID: 114750937195473172}
   - {fileID: 114307532085151588}
   - {fileID: 114824994199551886}
---- !u!114 &114276325853743438
+--- !u!114 &114271505983603624
 MonoBehaviour:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 111
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "player: Here, have some juice. \noffscreen: Wait! Stop!"
+--- !u!114 &114276325853743438
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -379,7 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 61
-  indentLevel: 0
+  indentLevel: 1
   messageTarget: 0
   _message:
     stringRef: {fileID: 0}
@@ -399,6 +567,58 @@ MonoBehaviour:
   itemId: 70
   indentLevel: 1
   storyText: Oww! Gotta be careful with the thorns.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &114300117253516464
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 108
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114018100103976240}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114301485308888336
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 99
+  indentLevel: 0
+  storyText: Water drips from a stem
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -461,11 +681,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 172.88385, y: 103.63212}
+  scrollPos: {x: 242.50613, y: 189.9133}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.69399846
+  zoom: 0.5899976
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -473,9 +693,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 114856917363133992}
-  selectedCommands:
-  - {fileID: 114682358747436792}
+  - {fileID: 114404155282394424}
+  selectedCommands: []
   variables:
   - {fileID: 114436506113736952}
   - {fileID: 114331369719876864}
@@ -483,6 +702,9 @@ MonoBehaviour:
   - {fileID: 114805839805454690}
   - {fileID: 114692051981736270}
   - {fileID: 114157752794903148}
+  - {fileID: 114576349846946510}
+  - {fileID: 114018100103976240}
+  - {fileID: 114367544615735406}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -509,7 +731,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &114335146993064346
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -577,6 +799,47 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: fox fruit behavior
   messageOLD: 
+--- !u!114 &114354774052833562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 112
+  indentLevel: 0
+  variable: {fileID: 114367544615735406}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114367544615735406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: KnowsCactusJuiceBad
+  value: 0
 --- !u!114 &114379764083319042
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -623,6 +886,60 @@ MonoBehaviour:
   commandList:
   - {fileID: 114603228981585776}
   - {fileID: 114451823499794706}
+--- !u!114 &114393268617713436
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114576349846946510}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114404155282394424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 301.79834
+    y: 305.91403
+    width: 184
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 43
+  blockName: fox cactus juice behavior
+  description: 
+  eventHandler: {fileID: 114179709661908050}
+  commandList:
+  - {fileID: 114271505983603624}
+  - {fileID: 114435376626341922}
+  - {fileID: 114354774052833562}
 --- !u!114 &114407062691612220
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -687,6 +1004,52 @@ MonoBehaviour:
   - {fileID: 114910130326264582}
   - {fileID: 114300090845425438}
   - {fileID: 114922970305704110}
+--- !u!114 &114433088439321732
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 1
+  storyText: I need something to hold the water with...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &114435376626341922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "bird: Hey you! Stop! You can\u2019t drink cactus juice!\nplayer: Why
+      not?\nbird: Unless giving his bowels a good kicking is your intention, it\u2019s
+      not a\ngood idea.\nplayer: Are you speaking from experience? BIRD: Do you really
+      want me to answer that? player: Good point.\nplayer: Sorry, little one, I\u2019m
+      taking back the cup. FOX: T-thirsty...\nplayer: Don\u2019t worry, I\u2019ll
+      figure something out."
 --- !u!114 &114436506113736952
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -732,7 +1095,7 @@ MonoBehaviour:
   - {fileID: 114819360231548650}
 --- !u!114 &114440102313700692
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -831,6 +1194,19 @@ MonoBehaviour:
   scope: 0
   key: TimesTouchedFruitCactus
   value: 0
+--- !u!114 &114489904183252356
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 101
+  indentLevel: 0
 --- !u!114 &114514596923326736
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -929,6 +1305,20 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &114576349846946510
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: KnowsThirsty
+  value: 0
 --- !u!114 &114602044754645314
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -941,7 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 114752280226538238}
-  message: large cactus default
+  message: large cactus default behavior
 --- !u!114 &114603228981585776
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1004,7 +1394,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &114682358747436792
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -1037,6 +1427,31 @@ MonoBehaviour:
   scope: 0
   key: HasCupOfWater
   value: 0
+--- !u!114 &114723032388852668
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 0
+  storyText: Water drips from a stem
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!114 &114745264207082940
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1089,6 +1504,24 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &114750937195473172
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43743931d28f43f89eced820d907351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 1
+  messageTarget: 0
+  _message:
+    stringRef: {fileID: 0}
+    stringVal: fox cactus juice behavior
+  messageOLD: 
 --- !u!114 &114752280226538238
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1113,6 +1546,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 114602044754645314}
   commandList:
+  - {fileID: 114723032388852668}
   - {fileID: 114965380564807898}
 --- !u!114 &114752564556329236
 MonoBehaviour:
@@ -1176,6 +1610,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 114393268617713436}
+  - {fileID: 114058956238022168}
+  - {fileID: 114060977726049950}
   - {fileID: 114298177019010734}
 --- !u!114 &114774262279883538
 MonoBehaviour:
@@ -1269,7 +1706,7 @@ MonoBehaviour:
   message: rock found pond dialog
 --- !u!114 &114856917363133992
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780314155094220}
@@ -1292,6 +1729,7 @@ MonoBehaviour:
   eventHandler: {fileID: 114100376811055876}
   commandList:
   - {fileID: 114682358747436792}
+  - {fileID: 114975076307953954}
 --- !u!114 &114885192921437604
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1443,7 +1881,7 @@ MonoBehaviour:
   variable: {fileID: 114157752794903148}
   booleanData:
     booleanRef: {fileID: 0}
-    booleanVal: 0
+    booleanVal: 1
   integerData:
     integerRef: {fileID: 0}
     integerVal: 0
@@ -1505,6 +1943,33 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114930186812845168
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 105
+  indentLevel: 1
+  variable: {fileID: 114018100103976240}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114931901940594430
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1607,6 +2072,60 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114965908320491898
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114018100103976240}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114975076307953954
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 94
+  indentLevel: 0
+  variable: {fileID: 114576349846946510}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114979398796288970
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1632,3 +2151,61 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114980559721635360
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 1
+  storyText: "player: There\u2019s more where it came from.\nplayer: I don\u2019t
+    need any more cactus juice, though."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &114985003097884958
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780314155094220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 345.05142
+    y: 178.29959
+    width: 203
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 41
+  blockName: large cactus thirsty behavior
+  description: 
+  eventHandler: {fileID: 114201519413956488}
+  commandList:
+  - {fileID: 114301485308888336}
+  - {fileID: 114104906581273024}
+  - {fileID: 114433088439321732}
+  - {fileID: 114965908320491898}
+  - {fileID: 114980559721635360}
+  - {fileID: 114489904183252356}
+  - {fileID: 114016984507867338}
+  - {fileID: 114930186812845168}
