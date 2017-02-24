@@ -169,7 +169,7 @@ Prefab:
     - target: {fileID: 114121130450726020, guid: 52535017aa13b400c956f82e67b74fa1,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114121130450726020, guid: 52535017aa13b400c956f82e67b74fa1,
         type: 2}
@@ -212,12 +212,12 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 472557770}
+      objectReference: {fileID: 472557765}
     - target: {fileID: 114121130450726020, guid: 52535017aa13b400c956f82e67b74fa1,
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 472557766}
+      objectReference: {fileID: 472557754}
     - target: {fileID: 114121130450726020, guid: 52535017aa13b400c956f82e67b74fa1,
         type: 2}
       propertyPath: variables.Array.data[0]
@@ -1193,6 +1193,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
+--- !u!114 &472557765
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472557728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae67a23cb4aa74793b41258ae40bf321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  stopParentFlowchart: 0
+  targetFlowcharts:
+  - {fileID: 472557729}
 --- !u!114 &472557766
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1206,8 +1222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 149.47276
-    y: 264.5027
+    x: 165.47276
+    y: 276.5027
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1231,7 +1247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 337.04504
+    x: 336.04504
     y: 279.5745
     width: 120
     height: 40
@@ -1243,6 +1259,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 472557769}
+  - {fileID: 472557765}
 --- !u!114 &472557769
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1281,7 +1298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: Hmmm, they don't seem happy...
+  storyText: Hmmm, they still don't seem happy...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1312,7 +1329,7 @@ MonoBehaviour:
       with where they are sitting...
 
 
-      Purple likes where she is
+      Purple wants the best view
 
       Yellow is the grumpiest
 
@@ -1594,6 +1611,10 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1102329741837534, guid: 4d23ee21d10304f3c8a20ed7d35b5f53, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d23ee21d10304f3c8a20ed7d35b5f53, type: 2}
   m_IsPrefabParent: 0
@@ -1691,7 +1712,7 @@ Transform:
   - {fileID: 472557733}
   - {fileID: 1993387677}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059435416
 GameObject:
@@ -1961,7 +1982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540837096
 GameObject:
