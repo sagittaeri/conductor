@@ -162,7 +162,6 @@ GameObject:
   - component: {fileID: 4386712925550400}
   - component: {fileID: 114730640143496432}
   - component: {fileID: 114029212502580470}
-  - component: {fileID: 114726053997151204}
   - component: {fileID: 114504960707326858}
   m_Layer: 0
   m_Name: Flowchart
@@ -1573,7 +1572,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1866039866562706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 28, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4386712925550400}
@@ -3585,7 +3584,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Start
   description: 
-  eventHandler: {fileID: 114726053997151204}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114504960707326858}
 --- !u!114 &114036868554207214
@@ -8699,19 +8698,6 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
---- !u!114 &114726053997151204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1144271669513244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 114029212502580470}
-  waitForFrames: 1
 --- !u!114 &114730640143496432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8737,8 +8723,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 114029212502580470}
-  selectedCommands:
-  - {fileID: 114504960707326858}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
