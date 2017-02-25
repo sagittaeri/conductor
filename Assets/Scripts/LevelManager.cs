@@ -16,6 +16,8 @@ public class LevelManager : MonoBehaviour
 
     private Clickable2D[] clickables;
 
+    public Camera LevelCamera { get { return levelCamera; } }
+
     void Start()
     {
         SetLevel(0);
@@ -23,10 +25,12 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
         {
             SetLevel((int)Mathf.Repeat(_currentLevel + 1, levels.Length));
         }
+#endif
 
         if (_currentFlowchart != null)
         {
@@ -53,7 +57,8 @@ public class LevelManager : MonoBehaviour
             .setOnComplete(() =>
             {
                 _currentFlowchart = levelGO.GetComponentInChildren<Flowchart>();
-                _currentFlowchart.ExecuteBlock("Start");
+                if (_currentFlowchart.FindBlock("Start") != null)
+                    _currentFlowchart.ExecuteBlock("Start");
             });
 
         clickables = GameObject.FindObjectsOfType<Clickable2D>();

@@ -8,10 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        if (!SceneManager.GetSceneByName("_Game").isLoaded)
-        {
-            StartCoroutine(LoadGame());
-        }
+        StartCoroutine(LoadGame());
     }
 
     IEnumerator LoadGame()
