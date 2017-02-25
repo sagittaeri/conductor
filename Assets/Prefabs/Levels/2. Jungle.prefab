@@ -1322,7 +1322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1162789953073130
 GameObject:
   m_ObjectHideFlags: 1
@@ -2485,7 +2485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1263180537640410
 GameObject:
   m_ObjectHideFlags: 1
@@ -2856,7 +2856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1289789880175468
 GameObject:
   m_ObjectHideFlags: 1
@@ -4904,7 +4904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1519402842011138
 GameObject:
   m_ObjectHideFlags: 1
@@ -5376,17 +5376,14 @@ GameObject:
   - component: {fileID: 114305488418406900}
   - component: {fileID: 114880106719878606}
   - component: {fileID: 114114459326506256}
-  - component: {fileID: 114545649223599696}
   - component: {fileID: 114093651302487884}
   - component: {fileID: 114943919150848950}
   - component: {fileID: 114464001203225372}
   - component: {fileID: 114585327555716914}
-  - component: {fileID: 114755945220636538}
   - component: {fileID: 114520446359734894}
   - component: {fileID: 114014698039736720}
   - component: {fileID: 114588889814884858}
   - component: {fileID: 114598681029617688}
-  - component: {fileID: 114739996964100934}
   - component: {fileID: 114051860649654590}
   - component: {fileID: 114398824947291530}
   - component: {fileID: 114739319120600736}
@@ -5418,13 +5415,22 @@ GameObject:
   - component: {fileID: 114662907181522868}
   - component: {fileID: 114056851718959026}
   - component: {fileID: 114029029981709280}
+  - component: {fileID: 114777288107478104}
+  - component: {fileID: 114599452664243352}
+  - component: {fileID: 114783850640881566}
+  - component: {fileID: 114846331968658080}
+  - component: {fileID: 114584003771215642}
+  - component: {fileID: 114584414711593468}
+  - component: {fileID: 114173416299620712}
+  - component: {fileID: 114153400753730244}
+  - component: {fileID: 114934455818215326}
   m_Layer: 0
   m_Name: Flower Crown Building Flow Chart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1562058684464540
 GameObject:
   m_ObjectHideFlags: 1
@@ -5585,7 +5591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1587689493112654
 GameObject:
   m_ObjectHideFlags: 1
@@ -41526,7 +41532,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 345.80127
-    y: 306.6472
+    y: 307.93253
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -41537,7 +41543,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114520446359734894}
-  - {fileID: 114755945220636538}
+  - {fileID: 114934455818215326}
   - {fileID: 114114459326506256}
   - {fileID: 114465595203287476}
 --- !u!114 &114095274905488460
@@ -45370,6 +45376,26 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114153400753730244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 89
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'marigold: This is it!
+
+      marigold: Dahlia will love this crown.
+
+      marigold: ...I can do this.'
 --- !u!114 &114153544740731958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -46707,6 +46733,36 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114173416299620712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "storm: The person who hasn\u2019t seen their brother in years...\nstorm:
+      That\u2019s your mystery friend, isn\u2019t it?\nplayer: ...\nstorm: How did
+      you meet them?\nplayer: On this train, five years ago.\nplayer: I was the train
+      conductor, and they needed help with something.\nstorm: Why am I not surprised?\nplayer:
+      We\u2019ve met on this train every year since.\nplayer: Each year, we\u2019d
+      talk about friendships and family.\nplayer: Not mine, since I don\u2019t have
+      any family, and with my job I don\u2019t have time for many friends.\nstorm:
+      So that\u2019s why you\u2019re looking for them right now.\nstorm: They\u2019re
+      your only friend.\nplayer: That, and I have something important to tell them.\nstorm:
+      And what is that?\nplayer: ...\nplayer: What about you, flappy?\nstorm: Me?
+      Don\u2019t think I didn\u2019t notice the deflection.\nplayer: You act all grumpy,
+      but you enjoy helping others more than you pretend\nto.\nstorm: W-what? Don\u2019t
+      be ridiculous!\nstorm: I just have nothing better to do right now!\nplayer:
+      Sure, if you say so.\nplayer: Anyway, I\u2019m moving on from here. You can
+      come if you want. player: I\u2019m kinda enjoying the company."
 --- !u!114 &114175701278656556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78405,31 +78461,6 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
---- !u!114 &114545649223599696
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559601412145218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 35
-  indentLevel: 0
-  storyText: It's perfect!
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &114545788974123868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81932,6 +81963,20 @@ MonoBehaviour:
   commandList:
   - {fileID: 114721042858660314}
   - {fileID: 114716868709085806}
+--- !u!114 &114584003771215642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114584414711593468}
+  clickableObject: {fileID: 114026054858909494}
+  waitFrames: 1
 --- !u!114 &114584208625778542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81976,6 +82021,31 @@ MonoBehaviour:
   - {fileID: 114274411837442598}
   - {fileID: 114038620176898960}
   - {fileID: 114579646705256788}
+--- !u!114 &114584414711593468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 740.88794
+    y: 377.87784
+    width: 155
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 87
+  blockName: Right Hippo Clicked
+  description: 
+  eventHandler: {fileID: 114584003771215642}
+  commandList:
+  - {fileID: 114846331968658080}
 --- !u!114 &114584963441068290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82173,7 +82243,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114739996964100934}
+  - {fileID: 114173416299620712}
 --- !u!114 &114589630276767898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83376,6 +83446,31 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &114599452664243352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 738.8828
+    y: 318.75186
+    width: 147
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 84
+  blockName: Left Hippo Clicked
+  description: 
+  eventHandler: {fileID: 114783850640881566}
+  commandList:
+  - {fileID: 114777288107478104}
 --- !u!114 &114600269247476314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95431,21 +95526,6 @@ MonoBehaviour:
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &114739996964100934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559601412145218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae67a23cb4aa74793b41258ae40bf321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 0
-  stopParentFlowchart: 1
-  targetFlowcharts: []
 --- !u!114 &114741598212761198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96889,31 +96969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
---- !u!114 &114755945220636538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1559601412145218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 42
-  indentLevel: 0
-  storyText: That's not right!
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
 --- !u!114 &114756080161950486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98104,6 +98159,24 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114777288107478104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Dahlia: Marigold\u2019s crown starts with a red flower. It\u2019s
+      the first thing I noticed.\nThree-colored stripes are pretty.\nWhat\u2019s Marigold
+      making?"
 --- !u!114 &114778095675411900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98681,6 +98754,20 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114783850640881566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114599452664243352}
+  clickableObject: {fileID: 114912449496415768}
+  waitFrames: 1
 --- !u!114 &114785672842144020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103669,7 +103756,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114014698039736720}
-  - {fileID: 114545649223599696}
+  - {fileID: 114153400753730244}
   - {fileID: 114598681029617688}
 --- !u!114 &114837674401343066
 MonoBehaviour:
@@ -104281,6 +104368,24 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114846331968658080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "marigold: We need to pick three flowers in the right order.\nDahlia
+      looks great in cyan, don\u2019t you think?\nDon\u2019t put cyan and blue or
+      red and magenta next to each other, that\u2019s awful!"
 --- !u!114 &114846568194997890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106883,7 +106988,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 114588889814884858}
   selectedCommands: []
   variables:
   - {fileID: 114853538070742278}
@@ -112073,6 +112179,22 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114934455818215326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1559601412145218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "marigold: That don\u2019t look quite right..."
 --- !u!114 &114936342872981510
 MonoBehaviour:
   m_ObjectHideFlags: 1
