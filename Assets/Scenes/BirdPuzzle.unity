@@ -171,12 +171,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 805383162}
   m_Script: {fileID: 11500000, guid: 445c07472dafe4e0ead0e88c4b757401, type: 3}
---- !u!114 &472557731 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114917901299643806, guid: 0f218f3329ec04fb5ab250fdc580cf16,
-    type: 2}
-  m_PrefabInternal: {fileID: 805383162}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &472557734 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114082217922585438, guid: 0f218f3329ec04fb5ab250fdc580cf16,
@@ -263,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
 --- !u!114 &472557767
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472557728}
@@ -286,9 +280,15 @@ MonoBehaviour:
   waitForClick: 0
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &472557774 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114402830057751038, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+    type: 2}
+  m_PrefabInternal: {fileID: 805383162}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &472557789
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472557728}
@@ -313,7 +313,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &472557790
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472557728}
@@ -338,7 +338,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &472557791
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 472557728}
@@ -428,6 +428,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114079914423581338, guid: 0f218f3329ec04fb5ab250fdc580cf16,
         type: 2}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079914423581338, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
       propertyPath: selectedCommands.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -467,7 +472,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 472557731}
+      objectReference: {fileID: 472557774}
     - target: {fileID: 114917901299643806, guid: 0f218f3329ec04fb5ab250fdc580cf16,
         type: 2}
       propertyPath: commandList.Array.data[0]
@@ -522,7 +527,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 472557790}
+      objectReference: {fileID: 472557791}
     - target: {fileID: 114386256419716488, guid: 0f218f3329ec04fb5ab250fdc580cf16,
         type: 2}
       propertyPath: commandList.Array.data[7]
@@ -576,7 +581,50 @@ Prefab:
     - target: {fileID: 114917901299643806, guid: 0f218f3329ec04fb5ab250fdc580cf16,
         type: 2}
       propertyPath: nodeRect.x
-      value: 256.40195
+      value: 253.40195
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917901299643806, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 46.49732
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702194982544338, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702194982544338, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 523
+      objectReference: {fileID: 0}
+    - target: {fileID: 114462086582115932, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 114402830057751038, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 694
+      objectReference: {fileID: 0}
+    - target: {fileID: 114402830057751038, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542044977728280, guid: 0f218f3329ec04fb5ab250fdc580cf16,
+        type: 2}
+      propertyPath: conversationText.stringVal
+      value: 'storm: The ideal sitting spot is the most important thing to those clowns.
+        They won''t give up that heirloom till they are happy...
+
+
+        Purple wants the best view
+
+        Yellow is the grumpiest
+
+        Green is feeling lonely'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114962612649692682, guid: 0f218f3329ec04fb5ab250fdc580cf16, type: 2}
