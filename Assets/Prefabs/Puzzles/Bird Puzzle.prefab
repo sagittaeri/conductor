@@ -225,14 +225,10 @@ GameObject:
   - component: {fileID: 114854729066258496}
   - component: {fileID: 114597305229232754}
   - component: {fileID: 114797721892793328}
-  - component: {fileID: 114840689059851098}
-  - component: {fileID: 114625730225930792}
-  - component: {fileID: 114952389179706262}
-  - component: {fileID: 114007025626496642}
-  - component: {fileID: 114775025173156332}
-  - component: {fileID: 114964223989641166}
   - component: {fileID: 114462086582115932}
   - component: {fileID: 114702194982544338}
+  - component: {fileID: 114581928025491146}
+  - component: {fileID: 114571203715260708}
   m_Layer: 0
   m_Name: Bird Flow Chart
   m_TagString: Untagged
@@ -526,23 +522,6 @@ BoxCollider2D:
   m_Offset: {x: 0.000000029802322, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
---- !u!114 &114007025626496642
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 58
-  indentLevel: 0
-  targetClickable2D: {fileID: 114785006788550956}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &114019701275147596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -685,7 +664,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 114574623913578984}
+  - {fileID: 114462086582115932}
   selectedCommands: []
   variables:
   - {fileID: 114419689317716878}
@@ -1449,9 +1428,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114952389179706262}
-  - {fileID: 114625730225930792}
-  - {fileID: 114840689059851098}
+  - {fileID: 114581928025491146}
 --- !u!114 &114462342207098992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1616,6 +1593,22 @@ MonoBehaviour:
   returnValueType: UnityEngine.Vector3
   showInherited: 0
   callMode: 0
+--- !u!114 &114571203715260708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542074466837610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e03fbb8bbf5470a8cd5b01b3706139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &114574623913578984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1680,6 +1673,22 @@ MonoBehaviour:
   isLocal: 0
   toTransformOLD: {fileID: 0}
   toPositionOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &114581928025491146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542074466837610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e03fbb8bbf5470a8cd5b01b3706139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 68
+  indentLevel: 0
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
 --- !u!114 &114591772399961276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1769,23 +1778,6 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
---- !u!114 &114625730225930792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 60
-  indentLevel: 0
-  targetClickable2D: {fileID: 114785006788550956}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
 --- !u!114 &114645631563452046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1838,9 +1830,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114964223989641166}
-  - {fileID: 114007025626496642}
-  - {fileID: 114775025173156332}
+  - {fileID: 114571203715260708}
 --- !u!114 &114753352161708318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1891,23 +1881,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 49
   indentLevel: 1
---- !u!114 &114775025173156332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 57
-  indentLevel: 0
-  targetClickable2D: {fileID: 114462342207098992}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &114785006788550956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1988,23 +1961,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 114597863371678188}
   - {fileID: 114753352161708318}
---- !u!114 &114840689059851098
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 61
-  indentLevel: 0
-  targetClickable2D: {fileID: 114462342207098992}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
 --- !u!114 &114854729066258496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2120,23 +2076,6 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
---- !u!114 &114952389179706262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 59
-  indentLevel: 0
-  targetClickable2D: {fileID: 114515358497162666}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
 --- !u!114 &114962612649692682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2154,23 +2093,6 @@ MonoBehaviour:
   targetView: {fileID: 114645631563452046}
   waitUntilFinished: 0
   targetCamera: {fileID: 0}
---- !u!114 &114964223989641166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542074466837610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 56
-  indentLevel: 0
-  targetClickable2D: {fileID: 114515358497162666}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &114987953315895584
 MonoBehaviour:
   m_ObjectHideFlags: 1
