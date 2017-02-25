@@ -14,7 +14,8 @@ public class FlowerColorer : MonoBehaviour {
 			Start();
 		}
 		foreach (var spline in splines) {
-			spline.SetFillColor2(c);
+			spline.SetFillColor1(c);
+			spline.RefreshMesh();
 		}
 	}
 }
