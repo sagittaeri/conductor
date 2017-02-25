@@ -789,6 +789,15 @@ GameObject:
   - component: {fileID: 43380968}
   - component: {fileID: 43380969}
   - component: {fileID: 43380958}
+  - component: {fileID: 43380970}
+  - component: {fileID: 43380973}
+  - component: {fileID: 43380972}
+  - component: {fileID: 43380971}
+  - component: {fileID: 43380977}
+  - component: {fileID: 43380976}
+  - component: {fileID: 43380975}
+  - component: {fileID: 43380974}
+  - component: {fileID: 43380978}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -809,11 +818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -58.44062, y: 43.313076}
+  scrollPos: {x: 65.275055, y: 64.15796}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 310
-  zoom: 0.58899975
+  zoom: 0.5079994
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -821,8 +830,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 43380957}
-  selectedCommands: []
+  - {fileID: 43380970}
+  selectedCommands:
+  - {fileID: 43380974}
   variables:
   - {fileID: 43380819}
   - {fileID: 43380921}
@@ -4080,7 +4090,8 @@ MonoBehaviour:
       companion: It''s not... what I mean is... delivering babies is not something
       anyone can do!
 
-      player: Delivering babies? Don''t be silly, I was offering to find a new home.
+      player: Delivering babies? Don''t be silly, I was offering to find him a new
+      home.
 
       player: I''m sure the nurse is on their way.
 
@@ -4155,14 +4166,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1096.0634
-    y: 42.79907
-    width: 120
+    x: 1102.8544
+    y: 68.26595
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 2
-  blockName: Intro2
+  blockName: Post light puzzle
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -4171,7 +4182,7 @@ MonoBehaviour:
   - {fileID: 43380954}
 --- !u!114 &43380958
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43380808}
@@ -4416,7 +4427,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &43380968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43380808}
@@ -4443,7 +4454,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &43380969
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43380808}
@@ -4468,6 +4479,319 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &43380970
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1098.9491
+    y: 182.01805
+    width: 144
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 2
+  blockName: Post home puzzle
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 43380973}
+  - {fileID: 43380972}
+  - {fileID: 43380971}
+  - {fileID: 43380977}
+  - {fileID: 43380976}
+  - {fileID: 43380975}
+  - {fileID: 43380974}
+  - {fileID: 43380978}
+--- !u!114 &43380971
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 214
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'companion: I''m a nurse and I can help you if you want.
+
+      seahorse: Yes please, thank you!!
+
+      companion: Good. Listen to my instructions and you''ll be alright...'
+--- !u!114 &43380972
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 213
+  indentLevel: 0
+  description: Companion goes to the seahorse to help them.
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: 
+  targetComponentFullname: 
+  targetComponentText: 
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
+  showInherited: 0
+  callMode: 0
+--- !u!114 &43380973
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 212
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'player: Mister Seahorse, is this adequate as a home?
+
+      seahorse: This is perfect... thank you...
+
+      player: What''s wrong?
+
+      seahorse: It''s my nurse... she couldn''t make it...
+
+      companion: W-what?
+
+      player: That troubling. Is there anything we can do to help?
+
+      companion: N-no! W-we can''t help him with this!
+
+      player: Storm??
+
+      companion: I... I can''t...
+
+      player: Please give us a moment, Mister Seahorse.
+
+      player: Storm, talk to me.
+
+      companion: I was a nurse.
+
+      player: Oh. Wait, what?!
+
+      companion: Don''t look so surprised. It''s not outside the realm of possibility.
+
+      player: "Was"? As in, you''re no longer a nurse? What happened?
+
+      companion: It''s not a happy story.
+
+      player: Tell me.
+
+      companion: ...
+
+      companion: I was helping someone give birth a few months ago...
+
+      player: Oh no... don''t tell me...
+
+      companion: They''re fine now.
+
+      companion: But I screwed up big. If my mentor hadn''t been around to catch my
+      mistake, I would''ve killed both the infant and the mother.
+
+      player: ...
+
+      companion: I left and hadn''t been a nurse since.
+
+      player: Everyone makes mistakes.
+
+      companion: Not everyone killed someone with their mistake.
+
+      player: But you didn''t kill them. They''re fine.
+
+      companion: I could''ve. That''s why... that''s why I can''t help horsey.
+
+      player: Storm, whatever happened in the past happened.
+
+      player: You have to pull yourself together and help the person today.
+
+      player: If you don''t, you might regret it.
+
+      companion: But, what if I make a mistake?
+
+      player: You won''t. You learnt your lesson the first time around. And I''ll
+      be here with you.
+
+      companion: ...'
+--- !u!114 &43380974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 218
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'player: You were pretty incredible back there.
+
+      companion: I was, wasn''t I?
+
+      player: A nurse... I defintely did not see that coming.
+
+      companion: Why? Is it so strange that I was a nurse?
+
+      player: ...
+
+      player: Actually no, now that I know you better, not really.
+
+      player: You''re like me. You like helping people, even if you hide it under
+      a layer of snark.
+
+      companion: ...
+
+      companion: I''m going to go back to being a nurse.
+
+      player: Wise choice.
+
+      companion: So, shall we move on? We still have to find your friend.
+
+      player: Yes. After you, flappy.
+
+      companion: Tell me more about your friend.
+
+      player: Well, they''re smart, gentle and incredibly kind.
+
+      companion: Yet they got into a fight with their brother?
+
+      player: They''re also incredibly headstrong and opiniated.
+
+      companion: That''s more like it. Something has to explain five years of not
+      speaking to family.
+
+      player: Well, he''s been trying. Maybe this year he''ll get his brother to forgive
+      him.'
+--- !u!114 &43380975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 217
+  indentLevel: 0
+  description: Seahorses bops a bit and then leaves the scene.
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: 
+  targetComponentFullname: 
+  targetComponentText: 
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
+  showInherited: 0
+  callMode: 0
+--- !u!114 &43380976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 216
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'seahorse: Thank you... I don''t know what we would''ve done without
+      you.
+
+      companion: No problem.'
+--- !u!114 &43380977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 215
+  indentLevel: 0
+  description: Fade to black, and when fade back in, there are many little searhorses
+    behind the father.
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: 
+  targetComponentFullname: 
+  targetComponentText: 
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
+  showInherited: 0
+  callMode: 0
+--- !u!114 &43380978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 219
+  indentLevel: 0
+  description: TO BE CONTINUED!
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: 
+  targetComponentFullname: 
+  targetComponentText: 
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
+  showInherited: 0
+  callMode: 0
 --- !u!21 &54134631
 Material:
   serializedVersion: 6
