@@ -345,7 +345,6 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 	}
 
 	private void AssignMaterials() {
-		Logger.Log(1);
 		if (PerspectiveMode) {
 			if (Cached3DFillMaterial == null) AssignDefaultMaterials();
 			else AssignCachedMaterials();
@@ -358,6 +357,9 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 
 	private void SetShaderValues()
 	{
+		#if UNITY_EDITOR
+		return;
+		#endif
 		Mrenderer.material.SetFloat("_Val1", textureGradientValue1);
 		Mrenderer.material.SetFloat("_Val2", textureGradientValue2);
 		Mrenderer.material.SetFloat("_VecX", textureGradientDirection.x);
