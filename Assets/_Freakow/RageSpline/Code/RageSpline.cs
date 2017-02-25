@@ -23,7 +23,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 	public Color fillColor1 = new Color(0.6f, 0.6f, 0.6f, 1f);
 	public Color fillColor2 = new Color(0.4f, 0.4f, 0.4f, 1f);
 
-	public enum UVMapping { None = 0, Fill, Outline };
+	public enum UVMapping { None = 0, Fill, Outline, FillGradient };
 	public UVMapping UVMapping1 = UVMapping.None;
 	public UVMapping UVMapping2 = UVMapping.None;
 
@@ -118,6 +118,14 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 	public bool AutoRefreshDelayRandomize = true;
 	public bool PerspectiveMode;
 	public bool CurrentPerspective;
+
+	[Range(0,1)]
+	public float textureGradientValue1;
+	[Range(0,1)]
+	public float textureGradientValue2;
+	public Vector2 textureGradientDirection = Vector2.up;
+	public Vector2 textureGradientPosition = new Vector2(0.5f, 0.5f);
+	public float textureGradientMagnitude = 1f;
 
 	[SerializeField] private MeshFilter _mFilter;
 	public MeshFilter Mfilter {
@@ -259,7 +267,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 			if (GetEmboss() != Emboss.None) DrawEmbossGizmos();
 			if (GetFill() == Fill.Gradient) DrawGradientGizmos();
 			if (GetTexturing1() != UVMapping.None)
-				if (GetTexturing1() == UVMapping.Fill && GetFill() != Fill.None)
+				if ((GetTexturing1() == UVMapping.Fill || GetTexturing1() == UVMapping.FillGradient) && GetFill() != Fill.None)
 					DrawTexturingGizmos();
 			if (GetTexturing2() != UVMapping.None)
 				if (GetTexturing2() == UVMapping.Fill && GetFill() != Fill.None)
@@ -337,6 +345,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 	}
 
 	private void AssignMaterials() {
+		Logger.Log(1);
 		if (PerspectiveMode) {
 			if (Cached3DFillMaterial == null) AssignDefaultMaterials();
 			else AssignCachedMaterials();
@@ -344,6 +353,18 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 			if (CachedFillMaterial == null) AssignDefaultMaterials();
 			else AssignCachedMaterials();
 		}
+		SetShaderValues();
+	}
+
+	private void SetShaderValues()
+	{
+		Mrenderer.material.SetFloat("_Val1", textureGradientValue1);
+		Mrenderer.material.SetFloat("_Val2", textureGradientValue2);
+		Mrenderer.material.SetFloat("_VecX", textureGradientDirection.x);
+		Mrenderer.material.SetFloat("_VecY", textureGradientDirection.y);
+		Mrenderer.material.SetFloat("_PosX", textureGradientPosition.x);
+		Mrenderer.material.SetFloat("_PosY", textureGradientPosition.y);
+		Mrenderer.material.SetFloat("_Mag", textureGradientMagnitude);
 	}
 
 	public void AssignCachedMaterials() {
@@ -458,7 +479,9 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 
 		if (GetFill() != Fill.None && FixOverlaps) UnshiftOverlappingControlPoints();
 
+		SetShaderValues();
 		return useOwners ? null : Mfilter;
+		
 	}
 
 	private void GenerateTrianglesSetup (MeshFilter meshFilter, bool refreshTriangulation, Vector3[] verts, RageVertex[] fillVerts, RageVertex[] embossVerts, RageVertex[] outlineVerts, bool fillAntialiasing, bool embossAntialiasing,
@@ -734,6 +757,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 		switch (GetTexturing1()) {
 			case UVMapping.None:
 			case UVMapping.Fill:
+			case UVMapping.FillGradient:
 				outlineVerts[v + 0 * vertsInBand].uv1 = Vector2.zero;
 				outlineVerts[v + 1 * vertsInBand].uv1 = Vector2.zero;
 				if (antialiasing) {
@@ -757,6 +781,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 		switch (GetTexturing2()) {
 			case UVMapping.None:
 			case UVMapping.Fill:
+			case UVMapping.FillGradient:
 				if (antialiasing) {
 					outlineVerts[v + 0 * vertsInBand].uv2 = Vector2.zero;
 					outlineVerts[v + 1 * vertsInBand].uv2 = Vector2.zero;
@@ -817,6 +842,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 								fillVerts[v].uv1 = new Vector2(0f, 0f);
 								break;
 							case UVMapping.Fill:
+							case UVMapping.FillGradient:
 								fillVerts[v].uv1 = GetFillUV(fillVerts[v].position);
 								if (antialiasing)
 									fillVerts[v + splits.Length].uv1 = GetFillUV(fillVerts[v + splits.Length].position);
@@ -829,6 +855,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 								fillVerts[v].uv2 = new Vector2(0f, 0f);
 								break;
 							case UVMapping.Fill:
+							case UVMapping.FillGradient:
 								fillVerts[v].uv2 = GetFillUV2(fillVerts[v].position);
 								if (antialiasing)
 									fillVerts[v + splits.Length].uv2 = GetFillUV2(fillVerts[v + splits.Length].position);
@@ -895,6 +922,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 								}
 								break;
 							case UVMapping.Fill:
+							case UVMapping.FillGradient:
 								fillVerts[v].uv1 = GetFillUV(fillVerts[v].position);
 								fillVerts[v + splits2.Length].uv1 = GetFillUV(fillVerts[v + splits2.Length].position);
 								if (antialiasing)
@@ -916,6 +944,7 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 								}
 								break;
 							case UVMapping.Fill:
+							case UVMapping.FillGradient:
 								fillVerts[v].uv2 = GetFillUV(fillVerts[v].position);
 								fillVerts[v + splits2.Length].uv2 = GetFillUV(fillVerts[v + splits2.Length].position);
 								if (antialiasing)
@@ -1450,9 +1479,11 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 
 			for (; ii < restOfTriangles.Length; ii++)
 				restOfTriangles[ii] = trisIdxs[ii];
-			if (GetTexturing1() == UVMapping.Fill)
+			var tex1 = GetTexturing1();
+			if (tex1 == UVMapping.Fill || tex1 == UVMapping.FillGradient)
 				mesh.SetTriangles(restOfTriangles, 0);
-			if (GetTexturing2() == UVMapping.Fill)
+			var tex2 = GetTexturing2();
+			if (tex2 == UVMapping.Fill || tex2 == UVMapping.FillGradient)
 				mesh.SetTriangles(restOfTriangles, 1);
 			for (; ii < trisIdxs.Length; ii++)
 				outlineTriangles[ii - restOfTriangles.Length] = trisIdxs[ii];
@@ -2055,6 +2086,24 @@ public class RageSpline : MonoBehaviour, IRageSpline {
 				worldMiddle + ScaleToGlobal(RotatePoint2D_CCW(Vector3.up, i * Mathf.Deg2Rad) * (1f / GetGradientScaleInv()))
 				);
 		}
+	}
+
+	public void DrawTextureGradientGizmos() {
+		Vector3 middle = textureGradientPosition;
+		Vector3 point = textureGradientDirection * textureGradientMagnitude;
+		// Vector3 point = RotatePoint2D_CCW(Vector3.up, GetGradientAngleDeg() * Mathf.Deg2Rad) * (1f / GetGradientScaleInv());
+
+		Gizmos.color = Color.yellow;
+		Gizmos.DrawLine(transform.TransformPoint(middle), transform.TransformPoint(middle + point));
+
+		// Gizmos.color = Color.yellow * new Color(1f, 1f, 1f, 0.2f);
+		// Vector3 worldMiddle = transform.TransformPoint(middle);
+		// for (int i = 4; i <= 360; i += 4) {
+		// 	Gizmos.DrawLine(
+		// 		worldMiddle + ScaleToGlobal(RotatePoint2D_CCW(Vector3.up, (i - 4) * Mathf.Deg2Rad) * (1f / GetGradientScaleInv())),
+		// 		worldMiddle + ScaleToGlobal(RotatePoint2D_CCW(Vector3.up, i * Mathf.Deg2Rad) * (1f / GetGradientScaleInv()))
+		// 		);
+		// }
 	}
 
 	public void DrawTexturingGizmos() {

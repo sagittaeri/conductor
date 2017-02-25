@@ -154,6 +154,12 @@ public class RageSplineEditor : Editor {
 		GuiX.Horizontal(() => rageSpline.SetTexturing1((RageSpline.UVMapping) EditorGUILayout.EnumPopup(" Texturing:", rageSpline.GetTexturing1(), GUILayout.Width(labelWidth))));
 		GuiX.Horizontal(() => rageSpline.SetTexturing2((RageSpline.UVMapping) EditorGUILayout.EnumPopup(" Texturing2:", rageSpline.GetTexturing2(), GUILayout.Width(labelWidth))));
 
+		if (rageSpline.GetTexturing1() == RageSpline.UVMapping.FillGradient)
+		{
+			rageSpline.textureGradientValue1 = (EditorGUILayout.FloatField("  Tex Grad Val 1", rageSpline.textureGradientValue1));
+			rageSpline.textureGradientValue2 = (EditorGUILayout.FloatField("  Tex Grad Val 2", rageSpline.textureGradientValue2));
+		}
+		
 		GeneralSettings(rageSpline);
 
 		PhysicsPopup(labelWidth, rageSpline, showMeshColliderWarning);
@@ -556,9 +562,46 @@ public class RageSplineEditor : Editor {
 			Vector3 dir = (pos - middle).normalized;
 			rageSpline.SetGradientAngleDeg(rageSpline.Vector2Angle_CCW(dir));
 		}
+			
+		// Tex Gradient Handles
+		if (RageSpline.showOtherGizmos && rageSpline.GetTexturing1() == RageSpline.UVMapping.FillGradient) {
+			Handles.color = Color.yellow;
+			rageSpline.textureGradientPosition = 
+				rageSpline.transform.InverseTransformPoint(
+				Handles.FreeMoveHandle(
+					rageSpline.transform.TransformPoint(rageSpline.textureGradientPosition),
+					Quaternion.identity,
+					HandleUtility.GetHandleSize(rageSpline.transform.TransformPoint(rageSpline.textureGradientPosition)) * 0.2f,
+					Vector3.zero,
+					Handles.CircleCap
+				)
+			);
+
+			Handles.color = Color.yellow;
+			var up = new Vector3(0f, 1f, 0f);
+			var point = rageSpline.textureGradientDirection;
+			var middle = rageSpline.textureGradientPosition;
+
+			var pos =
+				rageSpline.transform.InverseTransformPoint(
+					Handles.FreeMoveHandle(
+						rageSpline.transform.TransformPoint(middle + point * rageSpline.textureGradientMagnitude),
+						Quaternion.identity,
+						HandleUtility.GetHandleSize(rageSpline.transform.TransformPoint(point)) * 0.1f,
+						Vector3.zero,
+						Handles.CircleCap
+					)
+				);
+
+			Vector2 pos2D = pos;
+			rageSpline.textureGradientMagnitude = (pos2D - rageSpline.textureGradientPosition).magnitude;
+
+			var dir = (pos2D - middle).normalized;
+			rageSpline.textureGradientDirection = dir;
+		}
 
 		// Texturing Handles
-		if (RageSpline.showOtherGizmos && rageSpline.GetFill() != RageSpline.Fill.None && rageSpline.GetTexturing1() == RageSpline.UVMapping.Fill) {
+		if (RageSpline.showOtherGizmos && rageSpline.GetFill() != RageSpline.Fill.None && (rageSpline.GetTexturing1() == RageSpline.UVMapping.Fill || rageSpline.GetTexturing1() == RageSpline.UVMapping.FillGradient)) {
 			Handles.color = Color.magenta;
 			rageSpline.SetTextureOffset(
 				rageSpline.transform.InverseTransformPoint(
