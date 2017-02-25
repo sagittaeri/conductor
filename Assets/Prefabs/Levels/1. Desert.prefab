@@ -2481,6 +2481,10 @@ GameObject:
   - component: {fileID: 114458519707940460}
   - component: {fileID: 114833849992542424}
   - component: {fileID: 114254559527837850}
+  - component: {fileID: 114597366665219566}
+  - component: {fileID: 114055033929865760}
+  - component: {fileID: 114555522023584810}
+  - component: {fileID: 114214721785005084}
   m_Layer: 0
   m_Name: Desert Flowchart
   m_TagString: Untagged
@@ -21824,6 +21828,23 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114055033929865760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417303896751758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 449
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 78c5f5e070ef44974852ee86d81ea6a2, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &114055965787520788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29695,6 +29716,18 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &114214721785005084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417303896751758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff5d850a887844fe87ae7d366d3ab5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114555522023584810}
 --- !u!114 &114214914141876080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39708,9 +39741,9 @@ MonoBehaviour:
   indentLevel: 1
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "You put the cup under the drips\nplayer: ...\nIt\u2019s filling up
-      pretty slowly.\nMight take a few minu\u2014oh, it\u2019s done.\n(Obtained a
-      Cup of Cactus Juice)"
+    stringVal: "player: You put the cup under the drips\nplayer: ...\nIt\u2019s filling
+      up pretty slowly.\nMight take a few minu\u2014oh, it\u2019s done.\n(Obtained
+      a Cup of Cactus Juice)"
 --- !u!114 &114413985627415998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47642,6 +47675,31 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &114555522023584810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417303896751758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 703.12744
+    y: -382.08337
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 448
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 114214721785005084}
+  commandList:
+  - {fileID: 114055033929865760}
 --- !u!114 &114557783339319128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49861,6 +49919,19 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "companion: Hey, conductor, I need help with something. \nplayer: What
       is it?\ncompanion: What does \u201Cmasochist\u201D mean?\nplayer: ...go away."
+--- !u!114 &114597366665219566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417303896751758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 450
+  indentLevel: 4
 --- !u!114 &114597967545370994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49885,8 +49956,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 114616047673379570}
-  selectedCommands: []
+  - {fileID: 114555522023584810}
+  selectedCommands:
+  - {fileID: 114055033929865760}
   variables:
   - {fileID: 114275857563649558}
   - {fileID: 114033130541799934}
@@ -51000,6 +51072,7 @@ MonoBehaviour:
   - {fileID: 114765199346258106}
   - {fileID: 114833849992542424}
   - {fileID: 114254559527837850}
+  - {fileID: 114597366665219566}
   - {fileID: 114931801498742818}
   - {fileID: 114093543496289732}
   - {fileID: 114884034125645712}
