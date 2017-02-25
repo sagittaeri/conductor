@@ -16,6 +16,8 @@ public class LevelManager : MonoBehaviour
 
     private Clickable2D[] clickables;
 
+    public Camera LevelCamera { get { return levelCamera; } }
+
     void Start()
     {
         SetLevel(0);
