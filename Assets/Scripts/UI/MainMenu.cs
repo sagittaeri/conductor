@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
 
-        SceneManager.LoadScene("_Game", LoadSceneMode.Additive);
+		SceneManager.LoadScene("_Game", LoadSceneMode.Single);
     }
 
     public void QuitGame()

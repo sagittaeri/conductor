@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61396732240360006}
   - component: {fileID: 114478357387882564}
   - component: {fileID: 114932863493281732}
+  - component: {fileID: 114866759756858224}
   m_Layer: 0
   m_Name: Companion
   m_TagString: Untagged
@@ -74,6 +75,27 @@ MonoBehaviour:
   clickEnabled: 1
   useEventSystem: 0
   setVariableToMe: 
+--- !u!114 &114866759756858224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124326673155162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f492eaa0cef64fe98fb2b58845bbbd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
+  type: 
+  method: 
+  easeType: 0
+  time: 0
+  delay: 0
+  loopType: 0
+  isRunning: 0
+  isPaused: 0
+  _name: 
 --- !u!114 &114932863493281732
 MonoBehaviour:
   m_ObjectHideFlags: 1
