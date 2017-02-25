@@ -1911,6 +1911,15 @@ GameObject:
   - component: {fileID: 114089004858186134}
   - component: {fileID: 114799027003952188}
   - component: {fileID: 114578128109572610}
+  - component: {fileID: 114670250199040858}
+  - component: {fileID: 114818556937005788}
+  - component: {fileID: 114509538451929254}
+  - component: {fileID: 114073316652417456}
+  - component: {fileID: 114698984369495854}
+  - component: {fileID: 114362944822596762}
+  - component: {fileID: 114300515209763098}
+  - component: {fileID: 114311291791553734}
+  - component: {fileID: 114003192756994012}
   m_Layer: 0
   m_Name: Jungle Flowchart
   m_TagString: Untagged
@@ -27662,6 +27671,41 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114003192756994012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 562
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "marigold: What have I done... I\u2019ve accused my best friend of
+      such horrible things...\nplayer: Give it time. She\u2019ll forgive you eventually.\nmarigold:
+      But why doesn\u2019t it feel like it?\nplayer: ...\nplayer: When people love
+      each other it\u2019s not unusual for them to fight from time\nto time.\nplayer:
+      Sometimes the fight can be so bad they stop talking.\nplayer: But we have to
+      believe that it\u2019s only temporary.\nmarigold: ...\nmarigold: Is there someone
+      in your life you\u2019re fighting with?\nplayer: Me? No, not me. A friend of
+      mine fights with their family all the time.\nplayer: Especially their brother.
+      They haven\u2019t spoken in years.\nplayer: They take the train back to their
+      hometown every year to try to mend the\nrelationship.\nmarigold: Did it work?\nplayer:
+      No... not yet. But maybe it will this year.\nplayer: Marigold this won\u2019t
+      happen to you, because you\u2019ll fix it.\nmarigold: I will?\nplayer: Yes.
+      She\u2019s your best friend, so you must know her better than anyone. \nmarigold:
+      ...\nmarigold: You\u2019re right.\nmarigold: I know what we have to do.\nmarigold:
+      Dahlia has always loved my crown.\nstorm: Whoa, you\u2019re giving her your
+      crown?\nmarigold: Umm no. Grandma gave this one to me.\nmarigold: I\u2019ll
+      just have to make her another one!\nplayer: That sounds like a great idea.\nmarigold:
+      Can you help me pick up some things?\nstorm: *sigh*\nplayer: Of course!\nmarigold:
+      Thank you!\nmarigold: First, I\u2019ll need a long piece of vine, three different
+      types of leaves, and some glueing mud from the bottom of the main waterfall."
 --- !u!114 &114003929618574442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29415,8 +29459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 974.00494
-    y: 103.82682
+    x: 975.5872
+    y: 108.57364
     width: 160
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -29426,8 +29470,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 114818556937005788}
   - {fileID: 114617394632935428}
   - {fileID: 114136949613117884}
+  - {fileID: 114509538451929254}
   - {fileID: 114072406503729932}
 --- !u!114 &114027665903071320
 MonoBehaviour:
@@ -33085,6 +33131,33 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114073316652417456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 557
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114679219698238766}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114073465207877418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36992,7 +37065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 492
-  indentLevel: 0
+  indentLevel: 1
   storyText: Storm!
   description: 
   character: {fileID: 0}
@@ -46633,6 +46706,25 @@ MonoBehaviour:
   targetView: {fileID: 114930894206924344}
   waitUntilFinished: 1
   targetCamera: {fileID: 0}
+--- !u!114 &114300515209763098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 560
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "player: Marigold, is this your crown?\nmarigold: Yes! Where did you
+      find it?\r\nplayer: Those birds took it because they liked colorful things.\nstorm:
+      Like themselves. Vain creatures.\nplayer: Apparently true for all birds.\nstorm:
+      Hey!\nmarigold: Oh no...\nplayer: Marigold?"
 --- !u!114 &114302570104849262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -47684,6 +47776,25 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &114311291791553734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 561
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "marigold: Dahlia, I\u2019m so sorry...\ndahlia: If you were a real
+      friend, you would have trust me.\nmarigold: Please forgive me.\ndahlia: I need
+      to be alone.\nmarigold: Dahlia, please, we\u2019re best friends\u2014\ndahlia:
+      I need to be alone."
 --- !u!114 &114311943660985254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -50989,6 +51100,26 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
+--- !u!114 &114362944822596762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 559
+  indentLevel: 1
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 114670250199040858}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &114363301555820658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51066,7 +51197,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 974.82416
-    y: 248.79422
+    y: 234.55374
     width: 168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -51076,6 +51207,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 114073316652417456}
+  - {fileID: 114362944822596762}
+  - {fileID: 114698984369495854}
   - {fileID: 114549294076653902}
   - {fileID: 114507923528708068}
   - {fileID: 114895349466574976}
@@ -60290,6 +60424,19 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114509538451929254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 556
+  indentLevel: 0
 --- !u!114 &114509956631659276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67915,7 +68062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 491
-  indentLevel: 0
+  indentLevel: 1
   storyText: Alright, out with it. What did you steal from Marigold, Dahlia?
   description: 
   character: {fileID: 0}
@@ -71447,6 +71594,33 @@ MonoBehaviour:
   FarseerPhysicsPointsOnly: 0
   PhysicsIsTrigger: 0
   WorldAaWidth: 0
+--- !u!114 &114670250199040858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 987.916
+    y: 308.35233
+    width: 177
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 554
+  blockName: Right Hippo Give Crown
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114300515209763098}
+  - {fileID: 114311291791553734}
+  - {fileID: 114003192756994012}
 --- !u!114 &114670480037771028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73263,7 +73437,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 473.24432
-    y: 236.2696
+    y: 237.85188
     width: 155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -73619,6 +73793,19 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &114698984369495854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 558
+  indentLevel: 0
 --- !u!114 &114699158963340514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82773,6 +82960,33 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &114818556937005788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242062615610904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 555
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114679219698238766}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114818778425123982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90903,7 +91117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 526.32135, y: -749.8072}
+  scrollPos: {x: 258.9168, y: 31.83685}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 250
@@ -90915,8 +91129,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 114408017242311776}
-  selectedCommands: []
+  - {fileID: 114670250199040858}
+  selectedCommands:
+  - {fileID: 114003192756994012}
   variables:
   - {fileID: 114022141249107294}
   - {fileID: 114180197996421150}
