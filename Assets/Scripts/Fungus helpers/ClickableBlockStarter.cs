@@ -16,6 +16,9 @@ public class ClickableBlockStarter : MonoBehaviour , IPointerClickHandler
 
     [Tooltip("Use the UI Event System to check for clicks. Clicks that hit an overlapping UI object will be ignored. Camera must have a PhysicsRaycaster component, or a Physics2DRaycaster for 2D colliders.")]
     [SerializeField] protected bool useEventSystem;
+
+
+    [SerializeField] protected string setVariableToMe;
     protected virtual void DoPointerClick()
     {
         if (!clickEnabled)
@@ -23,9 +26,29 @@ public class ClickableBlockStarter : MonoBehaviour , IPointerClickHandler
             return;
         }
         var block = flowchart.FindBlock(blockName);
+        if (setVariableToMe != "") {
+            var variable = flowchart.GetVariable<Variable>(setVariableToMe);
+            if (variable == null) {
+                Debug.LogError("No variable with the name: " + setVariableToMe);
+            }
+            if (variable is GameObjectVariable) {
+                var goV = variable as GameObjectVariable;
+                goV.Value = gameObject;
+                flowchart.SetVariable<GameObjectVariable>(setVariableToMe, goV);
+            } else if (variable is TransformVariable) {
+                var tV = variable as TransformVariable;
+                tV.Value = transform;
+                flowchart.SetVariable<TransformVariable>(setVariableToMe, tV);
+            } else if (variable is AnimatorVariable) {
+                var aV = variable as AnimatorVariable;
+                aV.Value = GetComponent<Animator>();
+                flowchart.SetVariable<AnimatorVariable>(setVariableToMe, aV);
+            } else {
+                Debug.LogError("Unsupported variable type: " + setVariableToMe);
+            }
+        }
         flowchart.ExecuteBlock(block, commandIndex);
     }
-
 
     #region Legacy OnMouseX methods
 
