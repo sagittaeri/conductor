@@ -818,11 +818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 65.275055, y: 64.15796}
+  scrollPos: {x: 1233.3839, y: 320.12616}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 310
-  zoom: 0.5079994
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -832,7 +832,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 43380970}
   selectedCommands:
-  - {fileID: 43380974}
+  - {fileID: 43380978}
   variables:
   - {fileID: 43380819}
   - {fileID: 43380921}
@@ -4172,7 +4172,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 2
+  itemId: 220
   blockName: Post light puzzle
   description: 
   eventHandler: {fileID: 0}
@@ -4252,7 +4252,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 2
+  itemId: 221
   blockName: BubbleCoral clickhandler
   description: 
   eventHandler: {fileID: 0}
@@ -4498,7 +4498,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 2
+  itemId: 222
   blockName: Post home puzzle
   description: 
   eventHandler: {fileID: 0}
@@ -28127,6 +28127,11 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 680
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303817287569816, guid: 6473e30c17014934caf9bec7910bc346,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6473e30c17014934caf9bec7910bc346, type: 2}
