@@ -64,7 +64,7 @@ public class AmbientMovement : MonoBehaviour
     {
         var targetOffset = Mathf.Sin(t * Mathf.PI * 2f) * comp.delta;
         var delta = targetOffset - comp.prevOffset;
-        _transform.localPosition += delta;
+        // _transform.localPosition += delta;
         comp.prevOffset = targetOffset;
         return delta;
     }
