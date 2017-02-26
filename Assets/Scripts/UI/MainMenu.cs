@@ -8,10 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        if (!SceneManager.GetSceneByName("_Game").isLoaded)
-        {
-            StartCoroutine(LoadGame());
-        }
+        StartCoroutine(LoadGame());
     }
 
     IEnumerator LoadGame()
@@ -26,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
 
-        SceneManager.LoadScene("_Game", LoadSceneMode.Additive);
+		SceneManager.LoadScene("_Game", LoadSceneMode.Single);
     }
 
     public void QuitGame()

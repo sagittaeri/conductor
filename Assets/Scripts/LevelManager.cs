@@ -11,6 +11,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private LeanTweenType transitionEase = LeanTweenType.easeOutBack;
 
     private int _currentLevel = 0;
+    private Flowchart _currentFlowchart;
+    private bool _executingBlock;
+
+    private Clickable2D[] clickables;
+
+    public Camera LevelCamera { get { return levelCamera; } }
 
     void Start()
     {
@@ -19,9 +25,24 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
         {
             SetLevel((int)Mathf.Repeat(_currentLevel + 1, levels.Length));
+        }
+#endif
+
+        if (_currentFlowchart != null)
+        {
+            bool executing = _currentFlowchart.HasExecutingBlocks();
+            if (_executingBlock != executing)
+            {
+                _executingBlock = executing;
+                foreach (var clickable in clickables)
+                {
+                    clickable.enabled = !_executingBlock;
+                }
+            }
         }
     }
 
@@ -35,8 +56,11 @@ public class LevelManager : MonoBehaviour
             .setEase(transitionEase)
             .setOnComplete(() =>
             {
-                var flowchart = levelGO.GetComponentInChildren<Flowchart>();
-                flowchart.ExecuteBlock("Start");
+                _currentFlowchart = levelGO.GetComponentInChildren<Flowchart>();
+                if (_currentFlowchart.FindBlock("Start") != null)
+                    _currentFlowchart.ExecuteBlock("Start");
             });
+
+        clickables = GameObject.FindObjectsOfType<Clickable2D>();
     }
 }
